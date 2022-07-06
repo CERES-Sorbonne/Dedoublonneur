@@ -1,4 +1,3 @@
-itertools
 colour
 numpy
 tqdm

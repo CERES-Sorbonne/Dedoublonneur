@@ -64,12 +64,10 @@ class Avance():
             lst_doublons = np.transpose(np.nonzero(matrice_cosine < sensibilite)).tolist()
 
             del matrice_cosine
-
             for e in lst_doublons:
                 lst_doublons.remove([e[1], e[0]])
-
             #Nous permet de supprimer directement les doublons par l'index vu que l'élement reste a sa place (seuls ceux qui suivent ont étés supprimés)
-            doublons = sorted([e[1] for e in lst_doublons], reverse = True) 
+            doublons = sorted(list(set(e[1] for e in lst_doublons)), reverse = True)
             del lst_doublons
 
             for db in doublons:

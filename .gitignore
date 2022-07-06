@@ -1,0 +1,6 @@
+.eggs
+build
+dist
+europarser.egg-info
+dedoubloneur.egg-info
+Dedoubloneur/__pycache__

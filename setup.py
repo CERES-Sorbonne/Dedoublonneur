@@ -7,7 +7,7 @@ def parse_requirements(req_file):
     return _requires
 
 
-NAME = "europarser"
+NAME = "dedoubloneur"
 VERSION = "0.0.1"
 # Get dependencies from requirement files
 SETUP_REQUIRES = ['setuptools', 'setuptools-git', 'wheel']
