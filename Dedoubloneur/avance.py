@@ -10,14 +10,14 @@ from sklearn.metrics.pairwise import cosine_distances as pairwise_cos_dist
 
 class Avance():
     
-    def __init__(self, liste_txt : list[str], NB_PIVOTS : int = 50) -> None:
+    def __init__(self, liste_txt : list[str], nb_pivots : int = 50) -> None:
         self.liste_txt = liste_txt
-        self.NB_PIVOTS = NB_PIVOTS
+        self.nb_pivots = nb_pivots
         
         tqdm.write("\nDédoublonage avancé")
         
         with tqdm(total=2, desc = "Calcul des vecteurs BoW") as pbar:
-            docspivots = sample(list(enumerate(liste_txt)), NB_PIVOTS)
+            docspivots = sample(list(enumerate(liste_txt)), nb_pivots)
             textespivots = {e for _, e in docspivots}
             #On crée les vecteurs pour les textes (coordonnée n = occurences du mot de position n dans la liste de vocabulaire)
             vocab = set(' '.join(textespivots).lower().split())
