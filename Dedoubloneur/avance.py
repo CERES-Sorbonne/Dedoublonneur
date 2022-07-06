@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_distances as pairwise_cos_dist
 
 
-class avance():
+class Avance():
     
     def __init__(self, liste_txt : list[str], NB_PIVOTS : int = 50) -> None:
         self.liste_txt = liste_txt
