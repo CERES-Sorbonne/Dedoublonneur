@@ -4,7 +4,7 @@ You have to pass a list, it will process "pivots", texts from the list that'll b
 
 The syntax is the following, it'll process a few things when initialized : 
 
-instance = avance.Avance(list_to_process,  NB_PIVOTS : int = 50)
+instance = avance.Avance(list_to_process,  nb_pivots : int = 50)
 
 
 

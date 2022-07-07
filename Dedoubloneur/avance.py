@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_distances as pairwise_cos_dist
 
 class Avance():
     
-    def __init__(self, liste_txt : list[str], nb_pivots : int = 50) -> None:
+    def __init__(self, liste_txt : list[str], *args, nb_pivots : float = 50, **kwargs) -> None:
         self.liste_txt = liste_txt
         self.nb_pivots = nb_pivots
         
@@ -29,7 +29,7 @@ class Avance():
             self.pivots = docspivots
 
 
-    def process(self, taillegroupe : int = 1000, sensibilite : float = 0.00001) -> None:
+    def process(self, *args, taillegroupe : int = 1000, sensibilite : float = 0.00001, **kwargs) -> None:
         index_doublons , liste_doublons= [], []
         liste_txt = self.liste_txt
         self.taillegroupe = taillegroupe
