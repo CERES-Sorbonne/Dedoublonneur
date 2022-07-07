@@ -1,5 +1,6 @@
 from random import sample
 from itertools import chain
+from typing import List
 
 from colour import Color
 import numpy as np
@@ -10,7 +11,7 @@ from sklearn.metrics.pairwise import cosine_distances as pairwise_cos_dist
 
 class Avance():
     
-    def __init__(self, liste_txt : list[str], nb_pivots : int = 50) -> None:
+    def __init__(self, liste_txt : List[str], nb_pivots : int = 50) -> None:
         self.liste_txt = liste_txt
         self.nb_pivots = nb_pivots
         
