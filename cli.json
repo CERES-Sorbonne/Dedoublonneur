@@ -1,0 +1,5 @@
+{
+  "nombre_pivots": 50,
+  "taille_des_groupes": 1000,
+  "sensibilite": 1e-05
+}

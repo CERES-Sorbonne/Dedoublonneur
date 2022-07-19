@@ -4,3 +4,5 @@ dist
 europarser.egg-info
 dedoubloneur.egg-info
 Dedoubloneur/__pycache__
+.idea
+__pycache__
