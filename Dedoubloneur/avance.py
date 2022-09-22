@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_distances as pairwise_cos_dist
 
 
-class Avance():
+class Dedoubloneur():
     
     def __init__(self, liste_txt : List[str], *args, nb_pivots : float = 50, **kwargs) -> None:
         self.liste_txt = liste_txt
@@ -81,4 +81,7 @@ class Avance():
         self.liste_propre = list(chain.from_iterable(groupes))
         self.index_doublons = sorted(index_doublons)
         self.liste_doublons = sorted(liste_doublons, key=lambda liste_doublons: len(liste_doublons))
+
         tqdm.write(f"Dédoublonage avancé : Il reste désormais {len(liste_txt)} articles.")
+
+        return liste_propre

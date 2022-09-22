@@ -6,3 +6,4 @@ dedoubloneur.egg-info
 Dedoubloneur/__pycache__
 .idea
 __pycache__
+.ipynb_checkpoints
